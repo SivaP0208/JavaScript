@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Question 7</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/form.css">
+</head>
+
+<body>
+    <div class="form">
+        <form onsubmit="return validate()" action="" method="get">
+            <fieldset>
+                <h1 style="text-align: center;">Login Form</h1>
+            </fieldset><br>
+
+            <label for="firstName">Name</label>
+            <input type="text" name="firstName" id="firstName" placeholder="FirstName">
+            <input type="text" name="lastName" placeholder="LastName" id="lastName"><br><br>
+            <label for="firstName" class="name invalid">Invalid Name<br><br></label>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Email"><br><br>
+            <label for="email" class="email invalid">Invalid Mail<br><br></label>
+
+            <label for="phone">Phone Number</label>
+            <input type="text" name="phone" id="phone" placeholder="10-digit number" maxlength="10"><br><br>
+            <label for="phone" class="phone invalid">Invalid Phone<br><br></label>
+
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="password"><br><br>
+            <label for="password" class="password invalid">Create a strong 8-character password should consist of a mix
+                of uppercase and lowercase letters, numbers, and special symbols like % $ ! @<br><br></label>
+
+            <label for="">Gender</label><br>
+            <input type="radio" name="gender" id="male" value="Male"><label for="male">Male</label><br>
+            <input type="radio" name="gender" id="female" value="Female"><label for="female">Female</label><br>
+            <input type="radio" name="gender" id="notwish"><label for="notwish">Not wish to Disclose</label><br><br>
+            <label for="" class="gender invalid">Select the valid Gender<br><br></label>
+
+            <label for="address">Address : </label><br>
+            <textarea name="address" id="address" cols="30" rows="6"></textarea><br><br>
+            <label for="address" class="address invalid">Address field can't be empty<br><br></label>
+
+            <label for="dob">Date of Birth</label><br>
+            <input type="date" name="dob" id="dob"><br><br>
+            <label for="dob" class="dob invalid">Date of Birth must be selected<br><br></label>
+
+            <label for="time">Time</label><br>
+            <input type="time" name="time" id="time"><br><br>
+
+            <label for="">Languages</label><br>
+            <input type="checkbox" name="languages[]" id="tamil" value="Tamil"><label for="tamil">Tamil</label><br>
+            <input type="checkbox" name="languages[]" id="english" value="English"><label
+                for="english">English</label><br>
+            <input type="checkbox" name="languages[]" id="french" value="French"><label
+                for="french">French</label><br><br>
+            <label for="" class="languages invalid">Aleast one Language should be checked<br><br></label>
+
+            <label for="fieldInterest">Select Your field of interest : </label><br>
+            <select name="fieldOfInterest[]" class="fieldInterest" multiple size="3">
+                <option value="Music">Music</option>
+                <option value="Cycling">Cycling</option>
+                <option value="Batminton">Batminton</option>
+            </select><br><br>
+            <label for="fieldInterest" class="fieldOfInterest invalid">Atleast one field must be
+                selected<br><br></label>
+
+            <label for="photo">Upload Your Photo</label><br>
+            <input type="file" name="photo" id="photo"><br><br>
+            <label for="photo" class="photo invalid">Photo should be in jpg or svg format<br><br></label>
+            <input type="submit" onclick="resetValid()">
+
+            <input type="reset">
+        </form>
+    </div>
+    <div id="result">
+        <table cellpadding="10%">
+            <caption>
+                <h2>OUTPUT SCREEN</h2>
+            </caption>
+            <tr>
+                <th class="section">SECTION</th>
+                <th>USER DETAILS</th>
+            </tr>
+            <tr>
+                <th>USERNAME</th>
+                <td>Siva Paramasivam</td>
+            </tr>
+            <tr>
+                <th>EMAIL ID</th>
+                <td>Shiva@gmail.com</td>
+            </tr>
+            <tr>
+                <th>PHONE NUMBER</th>
+                <td>6382520746</td>
+            </tr>
+            <tr>
+                <th>PASSWORD</th>
+                <td>*********</td>
+            </tr>
+            <tr>
+                <th>GENDER</th>
+                <td>Male</td>
+            </tr>
+            <tr>
+                <th>CURRENT ADDRESS</th>
+                <td>No:19/2A,1st Street,Vyasarpadi,Chennai-600039</td>
+            </tr>
+            <tr>
+                <th>DATE OF BIRTH</th>
+                <td>02/08/2001</td>
+            </tr>
+            <tr>
+                <th>TIME</th>
+                <td>11.10 AM</td>
+            </tr>
+            <tr>
+                <th>LANGUAGES</th>
+                <td>
+                    <ul>
+                        <li>TAMIL</li>
+                        <li>ENGLISH</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>FIELD OF INTEREST</th>
+                <td>
+                    <ul>
+                        <li>BADMINTON</li>
+                        <li>CRICKET</li>
+                        <li>MUSIC</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>UPLOAD YOUR PICTURE</th>
+                <td><img src="Medias/DocScanner Mar 18, 2024 6-51 PM.jpg" alt="My Photo" width="20%" height="20%"></td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="JS/formvalidation.js"></script>
+</body>
+
+</html>

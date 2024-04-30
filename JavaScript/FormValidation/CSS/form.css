@@ -1,0 +1,26 @@
+body{
+    margin: 5% 30%;
+    border: 5px double black;
+}
+div{
+    margin: 5%;
+}
+.invalid{
+    display: none;
+    color: red;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 900;
+    font-family:'Times New Roman', Times, serif ;
+}
+#result{
+    margin: 6%;;
+    display: none;
+}
+#result table{
+    border: 2px;
+    width: 60%;
+}
+.section{
+    width: 30%;
+}

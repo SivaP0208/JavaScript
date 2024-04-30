@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.page{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+}
+.calculator{
+    width:25%;
+    height: 72%;
+    background-color: black;
+    padding: 3rem 2rem;
+    border-radius: 20px;
+}
+.display{
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    width :95%;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    text-align: right;
+    padding: 0em 2em;
+    height: 3em;
+    margin-bottom: 1em;
+    font-size: 20px;
+    font-weight: 500;
+    box-shadow: inset 4px 4px 10px rgba(128, 128, 128, 0.537) , 4px 4px 10px rgba(128, 128, 128, 0.537);
+}
+.display::placeholder{
+    color: white;
+    text-align: right;
+}
+button:not(.equal){
+    
+    width: 4em;
+    height: 4em;
+    margin: .5em;
+    font-size: 15px;
+    font-weight: 900;
+    background-color: gray;
+    color: rgb(0, 4, 255);
+    border-radius: 8px;
+    cursor: pointer;
+}
+.equal{
+    width:86%;
+    height: 4em;
+    margin: .5em;
+    font-size: 15px;
+    font-weight: 900;
+    background-color: orange;
+    color: black;
+    border-radius: 8px;
+    cursor: pointer;
+}
+td .operator{
+    background-color: orange;
+    color: black;
+}
