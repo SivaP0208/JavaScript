@@ -14,12 +14,11 @@ div{
     font-family:'Times New Roman', Times, serif ;
 }
 #result{
-    margin: 6%;;
     display: none;
 }
 #result table{
-    border: 2px;
-    width: 60%;
+    margin: 1em;
+    width: 100%;
 }
 .section{
     width: 30%;

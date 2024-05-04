@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/stylesheet.css">
+</head>
+<body>
+    <div id="page">
+        <div id="main">
+            <div id="header">
+                <div><img src="Images/logo.jpg" alt="syncfusion"></div>
+                <div>Library Portal</div>
+                <div>Books</div>
+            </div>
+            <div id="content">
+                <div id="add">Add New Book</div>
+                <div id="form">
+                    <form onsubmit="return validate()" action="" method="post">
+                        <label for="category">Category</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <select name="category" id="category">
+                            <option value="Select">Select</option>
+                            <option value="IT" id="it">IT</option>
+                            <option value="CSE" id="cse">CSE</option>
+                            <option value="ECE" id="ece">ECE</option>
+                        </select>&nbsp;&nbsp;<label for="category" class="invalid category">Atleast One Category must be selected</label><br>
+                        <label for="book">Book</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="text" name="book" id="book">&nbsp;&nbsp;<label for="book" class="invalid book">Invalid Book Name</label><br>
+                        <label for="email">Author Email</label>&nbsp;&nbsp;
+                        <input type="text" name="email" id="email">&nbsp;&nbsp;<label for="email" class="invalid email">Invalid Email</label><br>
+                        <label for="name">Author Name</label>&nbsp;&nbsp;
+                        <input type="text" name="name" id="name">&nbsp;&nbsp;<label for="name" class="invalid name">Only Letters Should be allowed</label><br>
+                        <label for="published">Published</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="text" name="published" id="published">&nbsp;&nbsp;<label for="published" class="invalid published">Invalid year</label><br>
+                        <label for="price">Price</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="text" name="price" id="price">&nbsp;&nbsp;<label for="price" class="invalid price">Invalid Price</label><br>
+                        <button type="submit" id="save">Save</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <button type="reset">Cancel</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <button id="show" disabled>Show</button>
+                    </form>
+                </div>
+            </div>
+            <div id="footer">
+                Copyright @ 2019 - present Syncfusion
+            </div>
+        </div>
+        <div id="output">
+            <div id="outputHeader">
+                <div><img src="Images/logo.jpg" alt="syncfusion"></div>
+                <div>Library Portal</div>
+                <div>Books</div>
+            </div>
+            <div id="outputContent">
+                <div id="bookName"></div>
+                <div id="details">
+                    <table cellpadding="20px">
+                        <tr><th>Category</th><td id="outputCategory"></td></tr>
+                        <tr><th>Book</th><td id="outputBook"></td></tr>
+                        <tr><th>Author Email</th><td id="outputEmail"></td></tr>
+                        <tr><th>Author</th><td id="outputAuthor"></td></tr>
+                        <tr><th>Published</th><td id="outputPublished"></td></tr>
+                        <tr><th>Price</th><td id="outputPrice"></td></tr>
+                    </table>
+                    <!-- <h4>Category</h4><span id="outputCategory"></span><br>
+                    <h4>Book</h4><span id="outputBook"></span><br>    
+                    <h4>Author Email</h4><span id="outputEmail"></span><br>    
+                    <h4>Author</h4><span id="outputAuthor"></span><br>    
+                    <h4>Published</h4><span id=""></span><br>    
+                    <h4>Price</h4><span id="outputPrice"></span><br>     -->
+                    
+                </div>
+            </div>
+            <div id="outputFooter">
+                Copyright @ <span id="copyright"></span> - present Syncfusion
+            </div>
+        </div>
+    </div>
+    <script src="JS/validation.js"></script>
+</body>
+</html>
